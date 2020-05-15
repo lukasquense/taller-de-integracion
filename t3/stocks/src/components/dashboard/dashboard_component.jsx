@@ -10,9 +10,6 @@ import TableData from '../data_table/data_table_component';
 import { LineChart, PieChart } from 'react-chartkick'
 import 'chart.js'
 import { getSnapshotData } from 'jest-snapshot/build/utils';
-import Volumen from "./volumen.js";
-import VolumenExchange from "./volumenExchange.js";
-import Participacion from "./participacion.js";
 
 
 const useStyles = makeStyles((theme) => ({
