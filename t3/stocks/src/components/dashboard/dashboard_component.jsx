@@ -10,6 +10,9 @@ import TableData from '../data_table/data_table_component';
 import { LineChart, PieChart } from 'react-chartkick'
 import 'chart.js'
 import { getSnapshotData } from 'jest-snapshot/build/utils';
+import Volumen from "./volumen.js";
+import VolumenExchange from "./volumenExchange.js";
+import Participacion from "./participacion.js";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -70,6 +73,7 @@ export default function CSSGrid({stock, market, stocks_info, buy_data, sell_data
         <Grid item xs={4}>
           <TableData stock={stock} />
         </Grid>
+    
         <Grid item xs={12}>
         <h1>Mercado de transacciones</h1>
         </Grid>
@@ -77,8 +81,6 @@ export default function CSSGrid({stock, market, stocks_info, buy_data, sell_data
         <Grid item xs={1}>
         </Grid>
         <Grid item xs={5}>
-        
-          <Paper className={classes.paper}>xs=8</Paper>
         </Grid>
         <Grid item xs={5}>
           <Paper className={classes.paper}>xs=8</Paper>
