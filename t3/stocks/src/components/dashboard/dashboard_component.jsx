@@ -80,7 +80,6 @@ export default function CSSGrid({stock, market, stocks_info, buy_data, sell_data
         <Grid item xs={5}>
         </Grid>
         <Grid item xs={5}>
-          <Paper className={classes.paper}>xs=8</Paper>
         </Grid>
         <Grid item xs={1}>
         </Grid>

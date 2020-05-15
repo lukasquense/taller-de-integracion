@@ -40,8 +40,11 @@ class App extends Component {
     socket.emit("EXCHANGES", (data) =>{
     });
     
-    socket.on("EXCHANGES", (data) => {
-      this.setState({ ...this.state, exchanges_data: data });
+    socket.on("EXCHANGES", (current) =>{
+      
+        this.setState(state=> ({...state, exchanges_data: {...state.exchanges_data, current}}
+        ))
+        console.log("current: ", this.state.exchanges_data)
     });
 
     socket.emit("STOCKS", (data) =>{
@@ -51,23 +54,9 @@ class App extends Component {
       console.log("current", current)
       
       current.forEach((e) => {
-        this.setState(state=> ({...state, stocks_info: {...state.stock_info, [e.ticker]: e}})
+        this.setState(state=> ({...state, stocks_info: {...state.stocks_info, [e.ticker]: e}})
       )})
     });
-
-    socket.on("STOCKS", (data) => {
-      this.setState({ ...this.state, stocks_data: data });
-      Object.values(data).map((stock) =>
-        this.setState({
-          ...this.state,
-          stocks_data2: {
-            ...this.state.stocks_data2,
-            [stock.company_name]: stock.ticker,
-          },
-        })
-      );
-    });
-
 
     socket.on("UPDATE", current =>{
 
