@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/taller-de-integracion/t3/static/css/main.cd7036b5.chunk.css",
+    "main.js": "/taller-de-integracion/t3/static/js/main.3314d5dd.chunk.js",
+    "main.js.map": "/taller-de-integracion/t3/static/js/main.3314d5dd.chunk.js.map",
+    "runtime-main.js": "/taller-de-integracion/t3/static/js/runtime-main.8a07935a.js",
+    "runtime-main.js.map": "/taller-de-integracion/t3/static/js/runtime-main.8a07935a.js.map",
+    "static/js/2.88dd76d4.chunk.js": "/taller-de-integracion/t3/static/js/2.88dd76d4.chunk.js",
+    "static/js/2.88dd76d4.chunk.js.map": "/taller-de-integracion/t3/static/js/2.88dd76d4.chunk.js.map",
+    "index.html": "/taller-de-integracion/t3/index.html",
+    "precache-manifest.418906f1aa6d2fd27350e116196468cb.js": "/taller-de-integracion/t3/precache-manifest.418906f1aa6d2fd27350e116196468cb.js",
+    "service-worker.js": "/taller-de-integracion/t3/service-worker.js",
+    "static/css/main.cd7036b5.chunk.css.map": "/taller-de-integracion/t3/static/css/main.cd7036b5.chunk.css.map",
+    "static/js/2.88dd76d4.chunk.js.LICENSE.txt": "/taller-de-integracion/t3/static/js/2.88dd76d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a07935a.js",
+    "static/js/2.88dd76d4.chunk.js",
+    "static/css/main.cd7036b5.chunk.css",
+    "static/js/main.3314d5dd.chunk.js"
+  ]
+}
